@@ -1,8 +1,8 @@
 # Dua-Challenge-iOS
 A challenge app used to generate and show random teams, fixtures and standings
 
-SHORT SUMMARY
-The app is a soccer league management tool that generates 20 unique soccer teams and simulates fixtures and results. 
+SHORT SUMMARY:
+This app is a soccer app that generates 20 unique soccer teams and simulates fixtures and results. 
 It allows users to view the teams ordered by their points in a table view. 
 The app focuses on the logic and functionality rather than complex UI design elements.
 
