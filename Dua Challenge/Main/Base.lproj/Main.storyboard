@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qKS-z4-KYu">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Team Creator Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="TeamCreatorController" id="BYZ-38-t0r" customClass="TeamCreatorController" customModule="Dua_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6w-4i-ybt">
+                                <rect key="frame" x="120.66666666666669" y="639" width="152" height="44"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DvZ-oM-3Px"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Generate Standings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="generateStandingsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="laq-zP-TYs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2z-xH-2kk">
+                                <rect key="frame" x="32" y="572.66666666666663" width="329" height="50.333333333333371"/>
+                                <string key="text">Please press the button below to generate the league standings from uniquely generated teams.
+(Created by: Muhamed Zahiri)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soccerball" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="i6t-sy-uUB">
+                                <rect key="frame" x="64" y="1" width="265" height="263.66666666666669"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="i6t-sy-uUB" secondAttribute="height" multiplier="1:1" id="ZaH-ev-Csx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f2z-xH-2kk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="9ap-ps-Wjn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o6w-4i-ybt" secondAttribute="bottom" constant="32" id="Bgf-89-83Z"/>
+                            <constraint firstItem="o6w-4i-ybt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QDA-Gt-2ug"/>
+                            <constraint firstItem="i6t-sy-uUB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="VWS-LN-NDG"/>
+                            <constraint firstAttribute="trailing" secondItem="f2z-xH-2kk" secondAttribute="trailing" constant="32" id="Yfe-H7-Ue5"/>
+                            <constraint firstItem="o6w-4i-ybt" firstAttribute="top" secondItem="f2z-xH-2kk" secondAttribute="bottom" constant="16" id="ed9-L3-6KC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i6t-sy-uUB" secondAttribute="trailing" constant="64" id="ema-Pf-6Z5"/>
+                            <constraint firstItem="i6t-sy-uUB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wYk-7F-lrZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FS2-01-oUy"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="ballImageView" destination="i6t-sy-uUB" id="q3M-2D-b1U"/>
+                        <outlet property="generateStandingsButton" destination="o6w-4i-ybt" id="ib7-4j-RGv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.885496183206" y="-2.1126760563380285"/>
+        </scene>
+        <!--Team Standings Controller-->
+        <scene sceneID="PC3-N1-JVA">
+            <objects>
+                <viewController storyboardIdentifier="TeamStandingsController" id="a2q-LI-WJx" customClass="TeamStandingsController" customModule="Dua_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nKI-Ax-DVx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uTD-hN-wTJ">
+                                <rect key="frame" x="8" y="8" width="377" height="699"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z02-ur-seX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uTD-hN-wTJ" firstAttribute="top" secondItem="z02-ur-seX" secondAttribute="top" constant="8" id="8GR-kP-2iB"/>
+                            <constraint firstItem="z02-ur-seX" firstAttribute="bottom" secondItem="uTD-hN-wTJ" secondAttribute="bottom" constant="8" id="Lfo-Ar-GYn"/>
+                            <constraint firstItem="uTD-hN-wTJ" firstAttribute="leading" secondItem="z02-ur-seX" secondAttribute="leading" constant="8" id="OST-TC-MKZ"/>
+                            <constraint firstItem="z02-ur-seX" firstAttribute="trailing" secondItem="uTD-hN-wTJ" secondAttribute="trailing" constant="8" id="gUs-US-vqL"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="uTD-hN-wTJ" id="HZc-zS-Iql"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCj-CD-dCY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831" y="9"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LgM-0e-LCt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qKS-z4-KYu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="afi-7d-eNf">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="m0P-qo-A8c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJa-nt-FJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
+        </scene>
+        <!--Team Details Controller-->
+        <scene sceneID="vzU-uG-JKx">
+            <objects>
+                <viewController storyboardIdentifier="TeamDetailsController" id="RgV-Ic-6kh" customClass="TeamDetailsController" customModule="Dua_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Txp-oL-kdM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-19" translatesAutoresizingMaskIntoConstraints="NO" id="gPk-t1-QTG" userLabel="Team Image">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="345"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bj5-Br-ium">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiP-9d-uCX">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NZv-pB-2uG">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                                                <subviews>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CM2-Al-4M8" userLabel="Fake View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jpw-Et-Y20" userLabel="Team Info Stack Holder">
+                                                                <rect key="frame" x="0.0" y="359" width="393" height="390"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eeq-Hy-cuy">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drita" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdX-Wg-0bm" userLabel="Team Name">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="XdX-Wg-0bm" firstAttribute="leading" secondItem="Eeq-Hy-cuy" secondAttribute="leading" id="Eia-KO-qOW"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="XdX-Wg-0bm" secondAttribute="trailing" id="cRX-rO-9BO"/>
+                                                                            <constraint firstItem="XdX-Wg-0bm" firstAttribute="top" secondItem="Eeq-Hy-cuy" secondAttribute="top" id="f5x-cP-9dX"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="XdX-Wg-0bm" secondAttribute="bottom" id="has-h9-AZl"/>
+                                                                            <constraint firstAttribute="height" constant="70" id="sTx-qM-Jnx"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8k-Qf-yWz">
+                                                                        <rect key="frame" x="0.0" y="80" width="393" height="70"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="fM3-2U-oQj">
+                                                                                <rect key="frame" x="30" y="0.0" width="333" height="70"/>
+                                                                                <subviews>
+                                                                                    <view multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rYe-K0-tO3" customClass="ShadowLightView" customModule="Dua_Challenge" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="70"/>
+                                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ea7-mb-EOB">
+                                                                                                <rect key="frame" x="8" y="19.666666666666629" width="87" height="30.666666666666671"/>
+                                                                                                <subviews>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igZ-6F-7te" userLabel="City">
+                                                                                                        <rect key="frame" x="31.333333333333329" y="0.0" width="24.666666666666671" height="14.333333333333334"/>
+                                                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gjilan" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dj-ay-Cd7" userLabel="City Label">
+                                                                                                        <rect key="frame" x="27.666666666666671" y="16.333333333333371" width="31.666666666666671" height="14.333333333333336"/>
+                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="Ea7-mb-EOB" firstAttribute="leading" secondItem="rYe-K0-tO3" secondAttribute="leading" constant="8" id="GSG-y1-X3W"/>
+                                                                                            <constraint firstItem="Ea7-mb-EOB" firstAttribute="centerY" secondItem="rYe-K0-tO3" secondAttribute="centerY" id="VBA-3A-pqf"/>
+                                                                                            <constraint firstItem="Ea7-mb-EOB" firstAttribute="centerX" secondItem="rYe-K0-tO3" secondAttribute="centerX" id="gC6-1v-kuB"/>
+                                                                                            <constraint firstAttribute="trailing" secondItem="Ea7-mb-EOB" secondAttribute="trailing" constant="8" id="nnm-Dk-36u"/>
+                                                                                        </constraints>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <real key="value" value="5"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </view>
+                                                                                    <view multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dK4-mS-GQI" customClass="ShadowLightView" customModule="Dua_Challenge" customModuleProvider="target">
+                                                                                        <rect key="frame" x="115" y="0.0" width="103" height="70"/>
+                                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="GVS-Jc-vtJ">
+                                                                                                <rect key="frame" x="8" y="12.666666666666629" width="87" height="45"/>
+                                                                                                <subviews>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coach" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bur-Ea-GKm" userLabel="Coach">
+                                                                                                        <rect key="frame" x="24.333333333333346" y="0.0" width="38.333333333333343" height="14.333333333333334"/>
+                                                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ardian Kelmendi" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e66-iB-d11" userLabel="Coach Label">
+                                                                                                        <rect key="frame" x="17.666666666666657" y="16.333333333333371" width="52" height="28.666666666666671"/>
+                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="GVS-Jc-vtJ" firstAttribute="centerY" secondItem="dK4-mS-GQI" secondAttribute="centerY" id="02o-yu-I50"/>
+                                                                                            <constraint firstItem="GVS-Jc-vtJ" firstAttribute="centerX" secondItem="dK4-mS-GQI" secondAttribute="centerX" id="2aK-kg-Kpw"/>
+                                                                                            <constraint firstItem="GVS-Jc-vtJ" firstAttribute="leading" secondItem="dK4-mS-GQI" secondAttribute="leading" constant="8" id="8mR-yS-HwK"/>
+                                                                                            <constraint firstAttribute="trailing" secondItem="GVS-Jc-vtJ" secondAttribute="trailing" constant="8" id="IWs-ce-BJl"/>
+                                                                                        </constraints>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <real key="value" value="5"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </view>
+                                                                                    <view multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TTT-ZG-PpI" customClass="ShadowLightView" customModule="Dua_Challenge" customModuleProvider="target">
+                                                                                        <rect key="frame" x="230" y="0.0" width="103" height="70"/>
+                                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="g0k-k8-Fdp">
+                                                                                                <rect key="frame" x="8" y="19.666666666666629" width="87" height="30.666666666666671"/>
+                                                                                                <subviews>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRu-co-lLO" userLabel="Points">
+                                                                                                        <rect key="frame" x="24.333333333333318" y="0.0" width="38.333333333333343" height="14.333333333333334"/>
+                                                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrU-U5-HTM" userLabel="Points Label">
+                                                                                                        <rect key="frame" x="39.666666666666686" y="16.333333333333371" width="7.6666666666666643" height="14.333333333333336"/>
+                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="g0k-k8-Fdp" firstAttribute="centerX" secondItem="TTT-ZG-PpI" secondAttribute="centerX" id="06n-sX-02L"/>
+                                                                                            <constraint firstItem="g0k-k8-Fdp" firstAttribute="leading" secondItem="TTT-ZG-PpI" secondAttribute="leading" constant="8" id="Llu-Nv-nRZ"/>
+                                                                                            <constraint firstItem="g0k-k8-Fdp" firstAttribute="centerY" secondItem="TTT-ZG-PpI" secondAttribute="centerY" id="SeC-fG-aNZ"/>
+                                                                                            <constraint firstAttribute="trailing" secondItem="g0k-k8-Fdp" secondAttribute="trailing" constant="8" id="rIh-yH-A53"/>
+                                                                                        </constraints>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <real key="value" value="5"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </view>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="fM3-2U-oQj" firstAttribute="top" secondItem="F8k-Qf-yWz" secondAttribute="top" id="54m-5I-Etw"/>
+                                                                            <constraint firstItem="fM3-2U-oQj" firstAttribute="leading" secondItem="F8k-Qf-yWz" secondAttribute="leading" constant="30" id="Gzc-De-9Jb"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="fM3-2U-oQj" secondAttribute="trailing" constant="30" id="JAH-eW-97T"/>
+                                                                            <constraint firstAttribute="height" constant="70" id="cY4-ZS-w2H"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="fM3-2U-oQj" secondAttribute="bottom" id="vNe-Hn-4qg"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mur-yZ-vXb">
+                                                                        <rect key="frame" x="0.0" y="160" width="393" height="70"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="R8s-k5-ZiZ">
+                                                                                <rect key="frame" x="30" y="0.0" width="333" height="70"/>
+                                                                                <subviews>
+                                                                                    <view multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FcV-hi-Kbi" customClass="ShadowLightView" customModule="Dua_Challenge" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="70"/>
+                                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="K2M-48-A7f">
+                                                                                                <rect key="frame" x="8" y="19.666666666666629" width="87" height="30.666666666666671"/>
+                                                                                                <subviews>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matches Won" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNU-Rd-rJg">
+                                                                                                        <rect key="frame" x="3" y="0.0" width="81" height="14.333333333333334"/>
+                                                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eh-Cy-gdY" userLabel="Matches Won Label">
+                                                                                                        <rect key="frame" x="39.666666666666671" y="16.333333333333371" width="7.6666666666666643" height="14.333333333333336"/>
+                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="K2M-48-A7f" firstAttribute="leading" secondItem="FcV-hi-Kbi" secondAttribute="leading" constant="8" id="Gec-LT-zZn"/>
+                                                                                            <constraint firstItem="K2M-48-A7f" firstAttribute="centerX" secondItem="FcV-hi-Kbi" secondAttribute="centerX" id="Nf3-cG-PWd"/>
+                                                                                            <constraint firstAttribute="trailing" secondItem="K2M-48-A7f" secondAttribute="trailing" constant="8" id="qyx-Xg-oT2"/>
+                                                                                            <constraint firstItem="K2M-48-A7f" firstAttribute="centerY" secondItem="FcV-hi-Kbi" secondAttribute="centerY" id="uio-2b-gil"/>
+                                                                                        </constraints>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <real key="value" value="5"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </view>
+                                                                                    <view multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pO0-2L-rEp" customClass="ShadowLightView" customModule="Dua_Challenge" customModuleProvider="target">
+                                                                                        <rect key="frame" x="115" y="0.0" width="103" height="70"/>
+                                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="U6B-uI-340">
+                                                                                                <rect key="frame" x="8" y="19.666666666666629" width="87" height="30.666666666666671"/>
+                                                                                                <subviews>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matches Draw" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPW-o6-jfp">
+                                                                                                        <rect key="frame" x="0.66666666666665719" y="0.0" width="86" height="14.333333333333334"/>
+                                                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANn-mz-s4I" userLabel="Matches Draw Label">
+                                                                                                        <rect key="frame" x="39.666666666666657" y="16.333333333333371" width="7.6666666666666643" height="14.333333333333336"/>
+                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="trailing" secondItem="U6B-uI-340" secondAttribute="trailing" constant="8" id="016-Nc-oo8"/>
+                                                                                            <constraint firstItem="U6B-uI-340" firstAttribute="centerY" secondItem="pO0-2L-rEp" secondAttribute="centerY" id="Fg5-SO-XSW"/>
+                                                                                            <constraint firstItem="U6B-uI-340" firstAttribute="leading" secondItem="pO0-2L-rEp" secondAttribute="leading" constant="8" id="QzI-bc-z3S"/>
+                                                                                            <constraint firstItem="U6B-uI-340" firstAttribute="centerX" secondItem="pO0-2L-rEp" secondAttribute="centerX" id="zKn-RW-Xc7"/>
+                                                                                        </constraints>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <real key="value" value="5"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </view>
+                                                                                    <view multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DHg-HP-fDh" customClass="ShadowLightView" customModule="Dua_Challenge" customModuleProvider="target">
+                                                                                        <rect key="frame" x="230" y="0.0" width="103" height="70"/>
+                                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="7lB-AE-iyn">
+                                                                                                <rect key="frame" x="8" y="19.666666666666629" width="87" height="30.666666666666671"/>
+                                                                                                <subviews>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matches Lost" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phe-m0-ItL">
+                                                                                                        <rect key="frame" x="3.3333333333333144" y="0.0" width="80.666666666666671" height="14.333333333333334"/>
+                                                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmZ-he-40x" userLabel="Matches Lost Label">
+                                                                                                        <rect key="frame" x="39.666666666666686" y="16.333333333333371" width="7.6666666666666643" height="14.333333333333336"/>
+                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="7lB-AE-iyn" firstAttribute="centerY" secondItem="DHg-HP-fDh" secondAttribute="centerY" id="UJb-9j-NbQ"/>
+                                                                                            <constraint firstAttribute="trailing" secondItem="7lB-AE-iyn" secondAttribute="trailing" constant="8" id="W5H-e4-QCm"/>
+                                                                                            <constraint firstItem="7lB-AE-iyn" firstAttribute="leading" secondItem="DHg-HP-fDh" secondAttribute="leading" constant="8" id="gBp-NW-SgV"/>
+                                                                                            <constraint firstItem="7lB-AE-iyn" firstAttribute="centerX" secondItem="DHg-HP-fDh" secondAttribute="centerX" id="kLZ-ES-BsH"/>
+                                                                                        </constraints>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <real key="value" value="5"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </view>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="R8s-k5-ZiZ" firstAttribute="leading" secondItem="Mur-yZ-vXb" secondAttribute="leading" constant="30" id="0Ph-wH-Wvs"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="R8s-k5-ZiZ" secondAttribute="trailing" constant="30" id="70R-2f-Soz"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="R8s-k5-ZiZ" secondAttribute="bottom" id="bVy-JP-bUZ"/>
+                                                                            <constraint firstItem="R8s-k5-ZiZ" firstAttribute="top" secondItem="Mur-yZ-vXb" secondAttribute="top" id="e9i-sq-eN9"/>
+                                                                            <constraint firstAttribute="height" constant="70" id="zJm-1Z-Iw1"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1c-hV-Fg7">
+                                                                        <rect key="frame" x="0.0" y="240" width="393" height="70"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="176-C8-Rhy">
+                                                                                <rect key="frame" x="30" y="0.0" width="333" height="70"/>
+                                                                                <subviews>
+                                                                                    <view multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="V4x-cj-Y8h" customClass="ShadowLightView" customModule="Dua_Challenge" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="70"/>
+                                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="2ux-56-b17">
+                                                                                                <rect key="frame" x="8" y="19.666666666666629" width="87" height="30.666666666666671"/>
+                                                                                                <subviews>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals Scored" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etE-sL-1sV">
+                                                                                                        <rect key="frame" x="3.6666666666666643" y="0.0" width="80" height="14.333333333333334"/>
+                                                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXn-ez-1ln" userLabel="Goals Scored Label">
+                                                                                                        <rect key="frame" x="39.666666666666671" y="16.333333333333371" width="7.6666666666666643" height="14.333333333333336"/>
+                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="trailing" secondItem="2ux-56-b17" secondAttribute="trailing" constant="8" id="52k-jA-bDV"/>
+                                                                                            <constraint firstItem="2ux-56-b17" firstAttribute="leading" secondItem="V4x-cj-Y8h" secondAttribute="leading" constant="8" id="Pmc-eQ-wNY"/>
+                                                                                            <constraint firstItem="2ux-56-b17" firstAttribute="centerX" secondItem="V4x-cj-Y8h" secondAttribute="centerX" id="Ral-7q-7uG"/>
+                                                                                            <constraint firstItem="2ux-56-b17" firstAttribute="centerY" secondItem="V4x-cj-Y8h" secondAttribute="centerY" id="hJ9-kL-FmO"/>
+                                                                                        </constraints>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <real key="value" value="5"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </view>
+                                                                                    <view multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6NJ-n0-TIL" customClass="ShadowLightView" customModule="Dua_Challenge" customModuleProvider="target">
+                                                                                        <rect key="frame" x="115" y="0.0" width="103" height="70"/>
+                                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Dnk-C5-BHT">
+                                                                                                <rect key="frame" x="8" y="12.666666666666629" width="87" height="45"/>
+                                                                                                <subviews>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals Received" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si1-8G-sDe">
+                                                                                                        <rect key="frame" x="16" y="0.0" width="55" height="28.666666666666668"/>
+                                                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g88-NL-eFo" userLabel="Goals Received Label">
+                                                                                                        <rect key="frame" x="39.666666666666657" y="30.666666666666739" width="7.6666666666666643" height="14.333333333333332"/>
+                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="Dnk-C5-BHT" firstAttribute="centerX" secondItem="6NJ-n0-TIL" secondAttribute="centerX" id="4sP-Uc-SIA"/>
+                                                                                            <constraint firstAttribute="trailing" secondItem="Dnk-C5-BHT" secondAttribute="trailing" constant="8" id="EB9-Fq-JfM"/>
+                                                                                            <constraint firstItem="Dnk-C5-BHT" firstAttribute="leading" secondItem="6NJ-n0-TIL" secondAttribute="leading" constant="8" id="IQu-Rd-j1t"/>
+                                                                                            <constraint firstItem="Dnk-C5-BHT" firstAttribute="centerY" secondItem="6NJ-n0-TIL" secondAttribute="centerY" id="VXH-S3-s4G"/>
+                                                                                        </constraints>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <real key="value" value="5"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </view>
+                                                                                    <view multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="P8x-4E-aaG" customClass="ShadowLightView" customModule="Dua_Challenge" customModuleProvider="target">
+                                                                                        <rect key="frame" x="230" y="0.0" width="103" height="70"/>
+                                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="oZU-PD-nPE">
+                                                                                                <rect key="frame" x="8" y="12.666666666666629" width="87" height="45"/>
+                                                                                                <subviews>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal Difference" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mz5-Hf-4pQ">
+                                                                                                        <rect key="frame" x="12.000000000000004" y="0.0" width="63.333333333333343" height="28.666666666666668"/>
+                                                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESk-7m-oEC" userLabel="Goal Difference Label">
+                                                                                                        <rect key="frame" x="39.666666666666686" y="30.666666666666739" width="7.6666666666666643" height="14.333333333333332"/>
+                                                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Profile.label.MyCourses"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </label>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="trailing" secondItem="oZU-PD-nPE" secondAttribute="trailing" constant="8" id="9yY-ME-kue"/>
+                                                                                            <constraint firstItem="oZU-PD-nPE" firstAttribute="leading" secondItem="P8x-4E-aaG" secondAttribute="leading" constant="8" id="CFE-hO-rzd"/>
+                                                                                            <constraint firstItem="oZU-PD-nPE" firstAttribute="centerY" secondItem="P8x-4E-aaG" secondAttribute="centerY" id="a2X-pt-TyQ"/>
+                                                                                            <constraint firstItem="oZU-PD-nPE" firstAttribute="centerX" secondItem="P8x-4E-aaG" secondAttribute="centerX" id="ea5-g6-1EF"/>
+                                                                                        </constraints>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <real key="value" value="5"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </view>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="176-C8-Rhy" firstAttribute="top" secondItem="y1c-hV-Fg7" secondAttribute="top" id="8RY-oG-Xwg"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="176-C8-Rhy" secondAttribute="bottom" id="DEE-Ja-z9K"/>
+                                                                            <constraint firstItem="176-C8-Rhy" firstAttribute="leading" secondItem="y1c-hV-Fg7" secondAttribute="leading" constant="30" id="Z5D-v0-ya5"/>
+                                                                            <constraint firstAttribute="height" constant="70" id="quq-Mb-2Vn"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="176-C8-Rhy" secondAttribute="trailing" constant="30" id="wbR-ie-zsd"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ee7-KZ-M8B" userLabel="Space">
+                                                                        <rect key="frame" x="0.0" y="320" width="393" height="70"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="70" id="Z8e-3e-VG1"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="jpw-Et-Y20" secondAttribute="trailing" id="2fe-4q-pgW"/>
+                                                            <constraint firstAttribute="bottom" secondItem="jpw-Et-Y20" secondAttribute="bottom" id="KQ6-Xj-dRM"/>
+                                                            <constraint firstItem="jpw-Et-Y20" firstAttribute="leading" secondItem="CM2-Al-4M8" secondAttribute="leading" id="M3s-Xc-NkI"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="NZv-pB-2uG" secondAttribute="bottom" id="MUx-tK-x8O"/>
+                                            <constraint firstItem="NZv-pB-2uG" firstAttribute="top" secondItem="ZiP-9d-uCX" secondAttribute="top" id="QIM-Sa-2cn"/>
+                                            <constraint firstAttribute="trailing" secondItem="NZv-pB-2uG" secondAttribute="trailing" id="WXe-pG-cHu"/>
+                                            <constraint firstItem="NZv-pB-2uG" firstAttribute="leading" secondItem="ZiP-9d-uCX" secondAttribute="leading" id="oNj-la-0sg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZiP-9d-uCX" firstAttribute="width" secondItem="bj5-Br-ium" secondAttribute="width" id="1xu-7d-Xe2"/>
+                                    <constraint firstItem="ZiP-9d-uCX" firstAttribute="top" secondItem="bj5-Br-ium" secondAttribute="top" id="4EK-kt-fnG"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZiP-9d-uCX" secondAttribute="bottom" id="7A4-eL-85T"/>
+                                    <constraint firstItem="ZiP-9d-uCX" firstAttribute="leading" secondItem="bj5-Br-ium" secondAttribute="leading" id="GnO-Zx-rL2"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZiP-9d-uCX" secondAttribute="trailing" id="ScT-Q9-sIE"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hce-oX-5Q8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gPk-t1-QTG" firstAttribute="bottom" secondItem="jpw-Et-Y20" secondAttribute="top" constant="20" id="1GN-7q-RR7"/>
+                            <constraint firstAttribute="bottom" secondItem="bj5-Br-ium" secondAttribute="bottom" id="1vl-Hh-bRb"/>
+                            <constraint firstItem="gPk-t1-QTG" firstAttribute="leading" secondItem="Hce-oX-5Q8" secondAttribute="leading" id="57G-98-RKN"/>
+                            <constraint firstItem="gPk-t1-QTG" firstAttribute="width" relation="greaterThanOrEqual" secondItem="CM2-Al-4M8" secondAttribute="width" id="CRi-74-ob9"/>
+                            <constraint firstItem="gPk-t1-QTG" firstAttribute="centerX" secondItem="Txp-oL-kdM" secondAttribute="centerX" id="NEJ-Fo-vUu"/>
+                            <constraint firstItem="gPk-t1-QTG" firstAttribute="trailing" secondItem="Hce-oX-5Q8" secondAttribute="trailing" id="UXI-Ds-1E5"/>
+                            <constraint firstItem="bj5-Br-ium" firstAttribute="top" secondItem="Txp-oL-kdM" secondAttribute="top" id="Uig-hL-oiN"/>
+                            <constraint firstItem="bj5-Br-ium" firstAttribute="trailing" secondItem="Hce-oX-5Q8" secondAttribute="trailing" id="ksc-Zl-Jcj"/>
+                            <constraint firstItem="CM2-Al-4M8" firstAttribute="height" secondItem="Txp-oL-kdM" secondAttribute="height" id="sdp-zP-CSA"/>
+                            <constraint firstItem="gPk-t1-QTG" firstAttribute="top" secondItem="Txp-oL-kdM" secondAttribute="top" priority="999" id="uTN-IQ-9Zf"/>
+                            <constraint firstItem="bj5-Br-ium" firstAttribute="leading" secondItem="Hce-oX-5Q8" secondAttribute="leading" id="xul-zR-qOb"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="2dj-ay-Cd7" id="UYm-ti-c52"/>
+                        <outlet property="coachLabel" destination="e66-iB-d11" id="0FZ-Cc-wnr"/>
+                        <outlet property="goalDifferenceLabel" destination="ESk-7m-oEC" id="ugk-dn-1EY"/>
+                        <outlet property="goalsReceivedLabel" destination="g88-NL-eFo" id="9nO-rM-pF1"/>
+                        <outlet property="goalsScoredLabel" destination="kXn-ez-1ln" id="r5P-TR-1I2"/>
+                        <outlet property="matchesDrawLabel" destination="ANn-mz-s4I" id="TVy-sG-UAC"/>
+                        <outlet property="matchesLostLabel" destination="fmZ-he-40x" id="nUa-iY-oCm"/>
+                        <outlet property="matchesWonLabel" destination="6eh-Cy-gdY" id="eOu-MR-08P"/>
+                        <outlet property="pointsLabel" destination="GrU-U5-HTM" id="sev-5c-kKU"/>
+                        <outlet property="teamDetailsStackView" destination="jpw-Et-Y20" id="hca-B9-Qqr"/>
+                        <outlet property="teamImageView" destination="gPk-t1-QTG" id="yYA-xz-mCw"/>
+                        <outlet property="teamNameLabel" destination="XdX-Wg-0bm" id="8UL-1r-16S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gvw-dK-Mpq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2691" y="8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo-19" width="400" height="390"/>
+        <image name="soccerball" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

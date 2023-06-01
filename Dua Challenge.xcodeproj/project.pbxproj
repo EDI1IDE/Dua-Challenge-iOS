@@ -8,22 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		44B640A82A287AEF00D49558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640A72A287AEF00D49558 /* AppDelegate.swift */; };
-		44B640AA2A287AEF00D49558 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640A92A287AEF00D49558 /* SceneDelegate.swift */; };
-		44B640AC2A287AEF00D49558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640AB2A287AEF00D49558 /* ViewController.swift */; };
 		44B640AF2A287AEF00D49558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B640AD2A287AEF00D49558 /* Main.storyboard */; };
 		44B640B12A287AF000D49558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B640B02A287AF000D49558 /* Assets.xcassets */; };
 		44B640B42A287AF000D49558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B640B22A287AF000D49558 /* LaunchScreen.storyboard */; };
+		44B640C02A287C9200D49558 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640BF2A287C9200D49558 /* Team.swift */; };
+		44B640C22A287C9F00D49558 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640C12A287C9F00D49558 /* Fixture.swift */; };
+		44B640C42A287CAC00D49558 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640C32A287CAC00D49558 /* Generator.swift */; };
+		44B640C62A287DAC00D49558 /* TeamCreatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640C52A287DAC00D49558 /* TeamCreatorController.swift */; };
+		44B640C82A287DD500D49558 /* TeamStandingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640C72A287DD500D49558 /* TeamStandingsController.swift */; };
+		44B640CA2A287DEB00D49558 /* TeamDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640C92A287DEB00D49558 /* TeamDetailsController.swift */; };
+		44B640CC2A287E0A00D49558 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640CB2A287E0A00D49558 /* UIStoryboard+Extensions.swift */; };
+		44B640CE2A287E2200D49558 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640CD2A287E2200D49558 /* UIViewController+Extensions.swift */; };
+		44B640D02A287E3D00D49558 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640CF2A287E3D00D49558 /* UIImage+Extensions.swift */; };
+		44B640D22A287EA300D49558 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640D12A287EA300D49558 /* UITableView+Extensions.swift */; };
+		44B640D62A2886EE00D49558 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640D52A2886EE00D49558 /* UIView+Extensions.swift */; };
+		44B640DA2A2890FF00D49558 /* TeamTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640D82A2890FF00D49558 /* TeamTCell.swift */; };
+		44B640DB2A2890FF00D49558 /* TeamTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B640D92A2890FF00D49558 /* TeamTCell.xib */; };
+		44B640DF2A28927600D49558 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640DE2A28927600D49558 /* Controller.swift */; };
+		44B640E12A28A04600D49558 /* CostumFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640E02A28A04600D49558 /* CostumFunctions.swift */; };
+		44B640E32A28A0C900D49558 /* ShadowClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640E22A28A0C900D49558 /* ShadowClasses.swift */; };
+		44B640E72A28A59200D49558 /* TeamTHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B640E52A28A59200D49558 /* TeamTHeader.swift */; };
+		44B640E82A28A59200D49558 /* TeamTHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B640E62A28A59200D49558 /* TeamTHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44B640A42A287AEF00D49558 /* Dua Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dua Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B640A72A287AEF00D49558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44B640A92A287AEF00D49558 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44B640AB2A287AEF00D49558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44B640AE2A287AEF00D49558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44B640B02A287AF000D49558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44B640B32A287AF000D49558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44B640B52A287AF000D49558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44B640BF2A287C9200D49558 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		44B640C12A287C9F00D49558 /* Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
+		44B640C32A287CAC00D49558 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		44B640C52A287DAC00D49558 /* TeamCreatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCreatorController.swift; sourceTree = "<group>"; };
+		44B640C72A287DD500D49558 /* TeamStandingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStandingsController.swift; sourceTree = "<group>"; };
+		44B640C92A287DEB00D49558 /* TeamDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsController.swift; sourceTree = "<group>"; };
+		44B640CB2A287E0A00D49558 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		44B640CD2A287E2200D49558 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		44B640CF2A287E3D00D49558 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		44B640D12A287EA300D49558 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		44B640D52A2886EE00D49558 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		44B640D82A2890FF00D49558 /* TeamTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTCell.swift; sourceTree = "<group>"; };
+		44B640D92A2890FF00D49558 /* TeamTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeamTCell.xib; sourceTree = "<group>"; };
+		44B640DE2A28927600D49558 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		44B640E02A28A04600D49558 /* CostumFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumFunctions.swift; sourceTree = "<group>"; };
+		44B640E22A28A0C900D49558 /* ShadowClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowClasses.swift; sourceTree = "<group>"; };
+		44B640E52A28A59200D49558 /* TeamTHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTHeader.swift; sourceTree = "<group>"; };
+		44B640E62A28A59200D49558 /* TeamTHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +88,95 @@
 		44B640A62A287AEF00D49558 /* Dua Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				44B640A72A287AEF00D49558 /* AppDelegate.swift */,
-				44B640A92A287AEF00D49558 /* SceneDelegate.swift */,
-				44B640AB2A287AEF00D49558 /* ViewController.swift */,
-				44B640AD2A287AEF00D49558 /* Main.storyboard */,
-				44B640B02A287AF000D49558 /* Assets.xcassets */,
-				44B640B22A287AF000D49558 /* LaunchScreen.storyboard */,
 				44B640B52A287AF000D49558 /* Info.plist */,
+				44B640B02A287AF000D49558 /* Assets.xcassets */,
+				44B640BC2A287BEA00D49558 /* App Core */,
+				44B640BD2A287C3300D49558 /* Main */,
+				44B640BE2A287C6700D49558 /* Models */,
+				44B640DD2A28925B00D49558 /* Helpers */,
+				44B640BB2A287BC100D49558 /* Extensions */,
 			);
 			path = "Dua Challenge";
+			sourceTree = "<group>";
+		};
+		44B640BB2A287BC100D49558 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44B640E02A28A04600D49558 /* CostumFunctions.swift */,
+				44B640CB2A287E0A00D49558 /* UIStoryboard+Extensions.swift */,
+				44B640CD2A287E2200D49558 /* UIViewController+Extensions.swift */,
+				44B640D12A287EA300D49558 /* UITableView+Extensions.swift */,
+				44B640D52A2886EE00D49558 /* UIView+Extensions.swift */,
+				44B640CF2A287E3D00D49558 /* UIImage+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		44B640BC2A287BEA00D49558 /* App Core */ = {
+			isa = PBXGroup;
+			children = (
+				44B640A72A287AEF00D49558 /* AppDelegate.swift */,
+				44B640B22A287AF000D49558 /* LaunchScreen.storyboard */,
+			);
+			path = "App Core";
+			sourceTree = "<group>";
+		};
+		44B640BD2A287C3300D49558 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				44B640AD2A287AEF00D49558 /* Main.storyboard */,
+				44B640C52A287DAC00D49558 /* TeamCreatorController.swift */,
+				44B640C72A287DD500D49558 /* TeamStandingsController.swift */,
+				44B640C92A287DEB00D49558 /* TeamDetailsController.swift */,
+				44B640DC2A28912000D49558 /* Cells */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		44B640BE2A287C6700D49558 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44B640BF2A287C9200D49558 /* Team.swift */,
+				44B640C12A287C9F00D49558 /* Fixture.swift */,
+				44B640C32A287CAC00D49558 /* Generator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44B640D72A2890FF00D49558 /* TeamTCell */ = {
+			isa = PBXGroup;
+			children = (
+				44B640D82A2890FF00D49558 /* TeamTCell.swift */,
+				44B640D92A2890FF00D49558 /* TeamTCell.xib */,
+			);
+			path = TeamTCell;
+			sourceTree = "<group>";
+		};
+		44B640DC2A28912000D49558 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44B640E42A28A55700D49558 /* TeamTHeader */,
+				44B640D72A2890FF00D49558 /* TeamTCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		44B640DD2A28925B00D49558 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				44B640DE2A28927600D49558 /* Controller.swift */,
+				44B640E22A28A0C900D49558 /* ShadowClasses.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		44B640E42A28A55700D49558 /* TeamTHeader */ = {
+			isa = PBXGroup;
+			children = (
+				44B640E52A28A59200D49558 /* TeamTHeader.swift */,
+				44B640E62A28A59200D49558 /* TeamTHeader.xib */,
+			);
+			path = TeamTHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				44B640B42A287AF000D49558 /* LaunchScreen.storyboard in Resources */,
+				44B640E82A28A59200D49558 /* TeamTHeader.xib in Resources */,
+				44B640DB2A2890FF00D49558 /* TeamTCell.xib in Resources */,
 				44B640B12A287AF000D49558 /* Assets.xcassets in Resources */,
 				44B640AF2A287AEF00D49558 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +252,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44B640AC2A287AEF00D49558 /* ViewController.swift in Sources */,
+				44B640DF2A28927600D49558 /* Controller.swift in Sources */,
+				44B640C62A287DAC00D49558 /* TeamCreatorController.swift in Sources */,
+				44B640C02A287C9200D49558 /* Team.swift in Sources */,
+				44B640CC2A287E0A00D49558 /* UIStoryboard+Extensions.swift in Sources */,
+				44B640E12A28A04600D49558 /* CostumFunctions.swift in Sources */,
+				44B640CA2A287DEB00D49558 /* TeamDetailsController.swift in Sources */,
+				44B640CE2A287E2200D49558 /* UIViewController+Extensions.swift in Sources */,
+				44B640D62A2886EE00D49558 /* UIView+Extensions.swift in Sources */,
+				44B640E72A28A59200D49558 /* TeamTHeader.swift in Sources */,
+				44B640C82A287DD500D49558 /* TeamStandingsController.swift in Sources */,
 				44B640A82A287AEF00D49558 /* AppDelegate.swift in Sources */,
-				44B640AA2A287AEF00D49558 /* SceneDelegate.swift in Sources */,
+				44B640DA2A2890FF00D49558 /* TeamTCell.swift in Sources */,
+				44B640D22A287EA300D49558 /* UITableView+Extensions.swift in Sources */,
+				44B640D02A287E3D00D49558 /* UIImage+Extensions.swift in Sources */,
+				44B640E32A28A0C900D49558 /* ShadowClasses.swift in Sources */,
+				44B640C22A287C9F00D49558 /* Fixture.swift in Sources */,
+				44B640C42A287CAC00D49558 /* Generator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +421,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +450,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
